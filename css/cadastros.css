@@ -111,7 +111,11 @@ a {
     color: #bd0808;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    #btn-menu {
+        display: block;
+    }
+
     .menu_lateral {
         position: fixed;
         top: 0;
@@ -130,6 +134,7 @@ a {
         overflow-x: hidden;
     }
 }
+
 
 #btn-menu {
     display: none;
@@ -195,7 +200,23 @@ a {
 }
 
 .sessao_tabela {
-    margin-top: 20px; /* ajusta o valor conforme quiser */
+    margin-top: 20px; 
 }
 
+.ui.steps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: .28571429rem;
+}
 
+.ui.steps .step {
+    flex: 1 1 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .ui.steps {
+        flex-direction: column;
+    }
+}

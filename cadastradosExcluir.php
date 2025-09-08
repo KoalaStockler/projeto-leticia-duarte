@@ -4,7 +4,6 @@ require_once './config.php';
 
 $id = $_GET['idExluir'];
 
-/* Apaga primeiro da tabela de ligação */
 $deleteAutorizadas = $conn->prepare("
     DELETE FROM tb_matricula_pessoas_autorizadas 
     WHERE id_matricula IN (

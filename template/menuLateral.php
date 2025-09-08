@@ -1,7 +1,7 @@
 <aside class="menu_lateral">
     <section class="opcoes_menu">
 
-        <div class="perfil" onclick="window.location.href='perfil.html'">
+        <div class="perfil">
             <img class="ui avatar image" src="./img/apresentacao_img/Logo Leiticia Duarte.png" alt="">
 
             <span class="usuario-info">

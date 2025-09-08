@@ -1,11 +1,6 @@
 <?php
-$dns = 'mysql:dbname=leticia_duarte;host=127.0.0.1';
-$usuario = 'root';
-$senha = '';
+require 'config.php';
 
-$conn = new PDO($dns, $usuario, $senha);
-
-// Fazendo o relacionamento direto no SELECT
 $scriptConsulta = "SELECT 
     tb_alunos.ra_aluno, 
     tb_alunos.nome AS nome_aluno, 
@@ -18,6 +13,7 @@ INNER JOIN tb_mae
     ON tb_matricula.mae = tb_mae.id_mae;";
 
 $resultadoConsulta = $conn->query($scriptConsulta)->fetchAll();
+var_dump($resultadoConsulta)
 ?>
 
 <!DOCTYPE html>
